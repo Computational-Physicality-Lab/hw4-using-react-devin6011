@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import ErrorPage from './ErrorPage';
 import NotImplementedPage from './containers/NotImplementedPage/NotImplementedPage';
+import HomePage from './containers/HomePage/HomePage';
+import ProductsPage from './containers/ProductsPage/ProductsPage';
+import DetailsPage from './containers/DetailsPage/DetailsPage';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +21,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        path: '',
+        element: <HomePage />,
+      },
+      {
         path: 'not_implemented',
         element: <NotImplementedPage />,
+      },
+      {
+        path: 'products',
+        element: <ProductsPage />,
+      },
+      {
+        path: 'details/:productId',
+        element: <DetailsPage />,
       },
     ],
   },

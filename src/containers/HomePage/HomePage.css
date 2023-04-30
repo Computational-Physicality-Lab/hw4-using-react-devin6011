@@ -1,0 +1,46 @@
+#HomePage > img {
+  width: 100%;
+}
+
+#HomePage > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  gap: 80px;
+}
+
+#HomePage > section > article {
+  border-radius: 10px;
+  border: 5px solid #c51230;
+  padding: 1%;
+
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+#HomePage > section > article > h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #c51230;
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#HomePage > section > article > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: gray;
+
+  text-align: justify;
+  margin: 1%;
+}

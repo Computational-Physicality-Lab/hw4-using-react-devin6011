@@ -1,0 +1,51 @@
+#ProductsMain {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#ProductsMain > h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+
+  margin: 1%;
+}
+
+#ProductSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  padding: 2%;
+  gap: 50px;
+}
+
+#ProductSection .card {
+  border-radius: 10px;
+  border: 5px solid #c51230;
+  max-width: 500px;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+#ProductSection .card img {
+  max-width: 100%;
+}
+
+#ProductSection .card .card-title {
+  font-size: 30px;
+  font-weight: normal;
+  color: #c51230;
+  margin: 5%;
+}
+
+#ProductSection .card .card-subtitle {
+  font-size: 20px;
+  color: gray;
+  margin: 5%;
+}
+
+#ProductSection .card button {
+  margin: 5%;
+}

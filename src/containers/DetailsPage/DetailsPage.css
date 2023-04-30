@@ -1,0 +1,64 @@
+#DetailsMain {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#DetailsMain > h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+
+  margin: 1%;
+}
+
+#DetailSection {
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 2%;
+}
+
+#DetailSection > img {
+  align-self: flex-start;
+  max-width: 100%;
+}
+
+#DetailDescription {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#DetailDescription > h3 {
+  font-size: 35px;
+  font-weight: normal;
+  color: #c51230;
+  overflow-wrap: anywhere;
+}
+
+#DetailDescription > p {
+  font-size: 20px;
+  color: #c51230;
+  text-align: justify;
+}
+
+#DetailDescription > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#DetailDescription .FlexContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#DetailDescription .ColorButton {
+  color: black;
+  transition: 0.3s;
+}
+
+#DetailDescription .ColorButton:hover {
+  color: whitesmoke;
+}
