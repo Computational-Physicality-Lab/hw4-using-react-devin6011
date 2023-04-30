@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 30px solid #c51230;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+
+  margin: 0;
+}
+
+#ShoppingCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  gap: 10px;
+
+  background-color: #ac2432;
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-family: serif;
+  font-size: 30px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: solid thin lightgray;
+  border-bottom: solid thin lightgray;
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  gap: 20px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+nav > a {
+  color: #c51230;
+  text-decoration: underline transparent 10px;
+  transition: 0.3s;
+}
+
+nav > a:hover {
+  text-decoration: underline #c51230 10px;
+}
