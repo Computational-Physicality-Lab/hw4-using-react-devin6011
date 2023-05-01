@@ -1,0 +1,80 @@
+#ShoppingCartMain {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 30px;
+}
+
+#ShoppingCartMain h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+
+  margin: 1%;
+  margin-left: 0;
+}
+
+#ShoppingCartMain h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+
+  margin: 1%;
+  margin-left: 0;
+}
+
+#ShoppingCartMain h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+#ShoppingCartMain .FlexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#ShoppingCartList {
+  flex-grow: 4;
+}
+
+#ShoppingCartAside {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ShoppingCartAside > section {
+  align-self: stretch;
+  border: 2px solid #c51230;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+#ShoppingCartAside > section > .FlexContainer {
+  color: gray;
+}
+
+#ShoppingCartAside > section > .FlexContainer > output {
+  color: #c51230;
+}
+
+.ShoppingCartListItem {
+  border-top: 1px solid #c51230;
+}
+
+.ShoppingCartListItem h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ShoppingCartListItem > div > section {
+  color: gray;
+  line-height: 2em;
+}
+
+.ShoppingCartListItem > div output {
+  color: #c51230;
+}

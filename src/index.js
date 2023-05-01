@@ -7,6 +7,7 @@ import NotImplementedPage from './containers/NotImplementedPage/NotImplementedPa
 import HomePage from './containers/HomePage/HomePage';
 import ProductsPage from './containers/ProductsPage/ProductsPage';
 import DetailsPage from './containers/DetailsPage/DetailsPage';
+import ShoppingCartPage from './containers/ShoppingCartPage/ShoppingCartPage';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: 'details/:productId',
         element: <DetailsPage />,
+      },
+      {
+        path: 'shoppingcart',
+        element: <ShoppingCartPage />,
       },
     ],
   },

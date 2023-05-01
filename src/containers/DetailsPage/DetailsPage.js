@@ -2,7 +2,7 @@ import './DetailsPage.css';
 import shirts from '../../shared/shirts.js';
 import { useParams } from 'react-router-dom';
 import { Button, Input } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, useOutletContext } from 'react-router-dom';
 import { useState } from 'react';
 
 const sizeArray = [
@@ -25,10 +25,12 @@ export default function DetailsPage() {
   const { productId } = useParams();
   const shirt = shirts[productId];
 
+  const [cartItems, setCartItems] = useOutletContext();
+
   const [color, setColor] = useState(() => shirt.colors ? Object.keys(shirt.colors)[0] : undefined);
   const [side, setSide] = useState('front');
   const [quantity, setQuantity] = useState(1);
-  const [size, setSize] = useState('Size');
+  const [size, setSize] = useState('Size:');
 
   const colorCount = shirt.colors ? Object.keys(shirt.colors).length : 0;
 
@@ -39,6 +41,10 @@ export default function DetailsPage() {
     else {
       return shirt.colors[color][side];
     }
+  };
+
+  const addCartItems = () => {
+    setCartItems([...cartItems, {productId, color, quantity, size}]);
   };
 
   if(!shirt) {
@@ -102,7 +108,7 @@ export default function DetailsPage() {
             </Link>
             :
             <Link to='../shoppingcart'>
-              <Button>
+              <Button onClick={addCartItems}>
                 Add To Cart
               </Button>
             </Link>

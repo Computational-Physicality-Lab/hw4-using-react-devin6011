@@ -3,7 +3,7 @@ import './Header.css';
 import Logo from '../../assets/images/logo.png';
 import CartImage from '../../assets/images/cart.png';
 
-export default function Header() {
+export default function Header({cartItemCount}) {
   return (
     <>
       <header>
@@ -15,7 +15,7 @@ export default function Header() {
         </h1>
         <Link to='shoppingcart' id='ShoppingCart'>
           <img src={CartImage} width='80' alt='Shopping Cart' />
-          0
+          {cartItemCount}
         </Link>
       </header>
       <nav>
