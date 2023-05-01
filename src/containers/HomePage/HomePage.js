@@ -4,7 +4,7 @@ import HomeImage from '../../assets/images/banner.png';
 export default function HomePage() {
   return (
     <main id='HomePage'>
-      <img src={HomeImage} alt='Home Image' />
+      <img src={HomeImage} alt='Home' />
       <section>
         <article>
           <h3>

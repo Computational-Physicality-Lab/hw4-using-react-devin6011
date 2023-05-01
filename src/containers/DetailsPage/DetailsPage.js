@@ -59,7 +59,7 @@ export default function DetailsPage() {
     <main id='DetailsMain'>
       <h2>{shirt.name || 'Name not found'}</h2>
       <section id='DetailSection'>
-        <img alt='Shirt Image' src={getImageSrc()} />
+        <img alt='Shirt' src={getImageSrc()} />
         <section id='DetailDescription'>
           <h3>{shirt.price || 'No price available'}</h3>
           <p>{shirt.description || 'No description available'}</p>
@@ -100,7 +100,7 @@ export default function DetailsPage() {
             </Input>
           </div>
           
-          {size == 'Size:' || !shirt.price ? 
+          {size === 'Size:' || !shirt.price ? 
             <Link to='../shoppingcart' style={{pointerEvents: 'none'}}>
               <Button disabled>
                 Add To Cart

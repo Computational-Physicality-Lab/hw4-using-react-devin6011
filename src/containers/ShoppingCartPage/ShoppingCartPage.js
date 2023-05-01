@@ -12,7 +12,7 @@ function CartListItem({item, changeQuantity, removeItem}) {
       <h4>{shirt.name || 'Name not found'}</h4>
       <div className='FlexContainer' style={{justifyContent: 'flex-start'}}>
         <Link to={'../details/' + item.productId}>
-          <img alt='Shirt Image' src={shirtImage} />
+          <img alt='Shirt' src={shirtImage} />
         </Link>
         <section>
           <div>
@@ -64,7 +64,7 @@ export default function ShoppingCartPage() {
       <h2>My Cart ({cartItemCount})</h2>
       <div className='FlexContainer'>
         <section id='ShoppingCartList'>
-          {cartItemCount == 0 ?
+          {cartItemCount === 0 ?
             <h3>Your Cart is Empty</h3>
             :
             cartItems.map((item, index) => (

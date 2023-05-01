@@ -9,7 +9,7 @@ function ProductCard({shirt, index}) {
   return (
     <Card>
       <Link to={'../details/' + index}>
-        <img alt="Shirt Image" src={shirtImage} />
+        <img alt="Shirt" src={shirtImage} />
       </Link>
       <CardBody>
         <CardTitle tag='h3'>
