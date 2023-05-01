@@ -4,6 +4,10 @@
   padding-bottom: 30px;
 }
 
+#ShoppingCartMain img {
+  max-width: 100%;
+}
+
 #ShoppingCartMain h2 {
   font-family: "Catamaran", sans-serif;
   font-size: 50px;
