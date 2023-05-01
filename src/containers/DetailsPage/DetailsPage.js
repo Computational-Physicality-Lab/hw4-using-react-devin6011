@@ -27,12 +27,12 @@ export default function DetailsPage() {
 
   const [cartItems, setCartItems] = useOutletContext();
 
-  const [color, setColor] = useState(() => shirt.colors ? Object.keys(shirt.colors)[0] : undefined);
+  const [color, setColor] = useState(() => shirt && shirt.colors ? Object.keys(shirt.colors)[0] : undefined);
   const [side, setSide] = useState('front');
   const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState('Size:');
 
-  const colorCount = shirt.colors ? Object.keys(shirt.colors).length : 0;
+  const colorCount = shirt && shirt.colors ? Object.keys(shirt.colors).length : 0;
 
   const getImageSrc = () => {
     if(!color || !(shirt.colors[color]) || !(shirt.colors[color][side])) {
