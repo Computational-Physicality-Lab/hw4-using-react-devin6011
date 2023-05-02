@@ -38,7 +38,21 @@ This is the starter code of [2023-Programming User Interface Homework](https://h
 
 ## React 與純 html / css / javascript 的不同
 
-待補。
+React 的寫法比較模塊化，除了大量使用 javascript modules 讓程式的架構更清楚明瞭之外，React Components 也讓程式碼可以很容易的被重複使用。另外，JSX 讓我們可以很方便的整合 HTML 到 javascript 程式碼裡，也可以透過 `{}` 內嵌 javascript 程式碼到 JSX 中。如果沒有 JSX，使用純 javascript 產生 DOM 的元素要寫很多行程式，不僅麻煩可讀性也很差。 React Hooks 也很方便，例如 `useState` 讓我們可以很方便的管理網頁元件的狀態，也可以在狀態更新時自動重新 render 網頁需要更新的部份。整體來說，我覺得使用 React 寫網頁比較方便、容易、可讀性高，使用純 javascript 雖然比較麻煩一點，但是比較能直接管理到網頁的 DOM ，也是有一些好處。
+
+### 哪個比較方便
+
+如上所述，我覺得 React 比較方便。
+
+### 哪個比較容易理解如何操作
+
+由於 React 模塊化的設計以及方便的 JSX 功能，我覺得 React 比較容易理解。
+
+雖然學習 React 需要多花一些時間，不過基本的 React 使用並不複雜，學習難度並沒有很高。
+
+### 哪個需要撰寫更多程式碼
+
+由於 React Components 讓我們可以很方便的重複使用程式碼，而且 JSX 可以讓我們輕鬆的整合 HTML 到 javascript 裡，使用 React 的程式碼會比較短一點。
 
 ## 其他有趣之處
 
